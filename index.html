@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Amazon Sidebar</title>
+ <meta name="description" content="" />
+ <link rel="stylesheet" href="styles.css" />
+ <!--Font Awsome-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+ <div id="overlay" onclick="closeNav()"></div>
+
+ <div id="closeBtn" onclick="closeNav()">&times;</div>
+<div class="sidenav" id="mySidenav">
+ <div class="sidenavHeader">
+  <i class="fas fa-user"></i>Hello, Sign In
+ </div>
+ <!--Below sidenavHeader-->
+ <div id="main-container">
+ <div class="sidenavContentHeader">Trending</div>
+<a href="#"><div class="sidenavContent">Best Sellers</div></a>
+<a href="#"><div class="sidenavContent">New Releases</div></a>
+<a href="#"><div class="sidenavContent">Movers and Shakers</div></a>
+<hr />
+<div class="sidenavContentHeader">Digital Content And Devices</div>
+<a href="#"
+onclick="openPrimeVideo()" 
+>
+ <div class="sidenavRow">
+  <div>Prime Video</div>
+  <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+</div>
+</a>
+<a href="#"
+onclick="openFireTv()" 
+>
+ <div class="sidenavRow">
+  <div>Fire TV</div>
+  <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+</div>
+</a>
+<a href="#">
+ <div class="sidenavRow">
+  <div>eBooks</div>
+  <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+</div>
+</a>
+<a href="#">
+ <div class="sidenavRow">
+  <div>Audiobooks</div>
+  <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+</div>
+</a>
+<a href="#">
+ <div class="sidenavRow">
+  <div>Amazon Prime</div>
+  <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+</div>
+</a>
+<a href="#">
+ <div class="sidenavRow">
+  <div>Amazon Music</div>
+  <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+</div>
+</a>
+<hr />
+<div class="sidenavContentHeader">Shop By Category</div>
+<a href="#">
+ <div class="sidenavRow">
+  <div>Mobiles, Computers</div>
+  <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+</div>
+</a>
+<a href="#">
+ <div class="sidenavRow">
+  <div>TV, Electronics</div>
+  <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+</div>
+</a>
+<a href="#">
+ <div class="sidenavRow">
+  <div>Men's Fashion</div>
+  <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+</div>
+</a>
+<a href="#">
+ <div class="sidenavRow">
+  <div>Women's Fashion</div>
+  <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+</div>
+</a>
+<div class="sidenavContainer" id="firstContainer">
+ <hr />
+ <a href="#">
+  <div class="sidenavRow">
+   <div>Home, Garden, Pets </div>
+   <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+ </div>
+ </a>
+ <a href="#">
+  <div class="sidenavRow">
+   <div>Toys, Children & Baby </div>
+   <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+ </div>
+ </a>
+ <a href="#">
+  <div class="sidenavRow">
+   <div>Clothes, Shows & Jwellery</div>
+   <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+ </div>
+ </a>
+ <a href="#">
+  <div class="sidenavRow">
+   <div>Sports & Outdoors</div>
+   <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+ </div>
+ </a>
+ <a href="#">
+  <div class="sidenavRow">
+   <div>Food & Grocery</div>
+   <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+ </div>
+ </a>
+ <a href="#">
+  <div class="sidenavRow">
+   <div>Health & Beauty</div>
+   <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+ </div>
+ </a>
+ <a href="#">
+  <div class="sidenavRow">
+   <div>Car & Motorbike</div>
+   <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+ </div>
+ </a>
+ <a href="#">
+  <div class="sidenavRow">
+   <div>Business, Industry & Science</div>
+   <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+ </div>
+ </a>
+ </div>
+<div
+class="sidenavRowDropdown"
+id="firstDropDown"
+onclick="firstDropDown()">
+<div>See All</div>
+<i 
+class="fas fa-chevron-down"
+style="color:#8e9090; margin-left: 10px"
+>
+</i>
+ </div>
+ 
+ <hr />
+ <div class="sidenavContentHeader">Programs & Features</div>
+ <a href="#">
+  <div class="sidenavRow">
+   <div>Gift Cards & Top Up</div>
+   <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+ </div>
+ </a>
+ <a href="#">
+  <div class="sidenavRow">
+   <div>Find a Gift</div>
+   <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+ </div>
+ </a>
+ <a href="#">
+  <div class="sidenavRow">
+   <div>Amazon Launchpad</div>
+   <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+ </div>
+ </a>
+ <a href="#">
+  <div class="sidenavRow">
+   <div>Flight Tickets</div>
+   <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+ </div>
+ </a>
+ <div class="sidenavContainer" id="firstContainer">
+  <hr />
+  <a href="#">
+   <div class="sidenavRow">
+    <div>Find a Gift</div>
+    <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+  </div>
+  </a>
+  <a href="#">
+   <div class="sidenavRow">
+    <div>Handmade</div>
+    <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+  </div>
+  </a>
+  <a href="#">
+   <div class="sidenavRow">
+    <div>Amazon Launchpad</div>
+    <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+  </div>
+  </a>
+  </div>
+  <!--Beginning of  sidenavContainer-->
+  <div class="sidenavContainer" id="secondContainer">
+  <hr />
+  <a href="#">
+   <div class="sidenavContent">Made In Italy</div>
+  </a>
+  <a href="#">
+   <div class="sidenavRow">
+    <div>Home Services</div>
+    <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+  </div>
+  </a>
+  <a href="#">
+   <div class="sidenavContent">Prime Wardrobe</div>
+  </a>
+  <a href="#">
+   <div class="sidenavRow">
+    <div>Amazon Business</div>
+    <i class="fas fa-chevron-right" style="color: #8e9090;"></i> 
+  </div>
+  </a>
+  <a href="#">
+   <div class="sidenavContent">Prime Wardrobe</div>
+  </a>
+  </div>
+ <div
+ class="sidenavRowDropdown"
+ id="secondDropDown"
+ onclick="secondDropDown()"
+ >
+ <div>See All</div>
+ <i 
+ class="fas fa-chevron-down"
+ style="color:#8e9090; margin-left: 10px"
+ >
+ </i>
+  </div>
+  
+  <hr />
+  <div class="sidenavContentHeader">Help & Settings</div>
+  <a href="#"><div class="sidenavContent">Your Account</div></a>
+  <a href="#"><div class="sidenavContent">Currency Settings</div></a>
+  <a href="#"><div class="sidenavContent">Customer Services</div></a>
+  <a href="#"><div class="sidenavContent">Sign In</div></a>
+<div style="height: 50px"></div>
+</div>
+<!--End of first container-->
+
+
+<div id="sub-container">
+<div id="mainMenu">
+ <i 
+ class="fas fa-chevron-left"
+ style="color:#8e9090"
+ ></i> MAIN MENU
+ </div>
+<hr />
+<div id="sub-container-content">
+<!--<div class="sidenavContentHeader">Prime Video</div>
+<a href="#"><div class="sidenavContent">All Videos</div></a> -->
+</div>
+</div>
+
+ </div>
+
+ <!--No sideNav-->
+ <div 
+  onclick="openNav()"
+  style="
+        font-size: 30px;
+        margin: 30px 20px 0 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        "
+        >
+       &#9776; 
+       </div>
+       <div id="whole-flex">
+        <p style="font-size: 40px;">This is the Amazon Website</p>
+        <img 
+        src="img1.jpg"
+        alt="This is the Amazon Website"
+        style="margin-top: 20px; height: auto; width: 80%; max-width: 800px;"
+        />
+       </div>
+       <script src="script.js"></script>
+
+ 
+</body>
+</html>
